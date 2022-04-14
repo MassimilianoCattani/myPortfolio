@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+    <link rel = "stylesheet" href ="style.css" media = "all">
+    <script src = "app.js" defer></script>
+    <title>Slot Machine</title>
+</head>
+<body>
+    <section id = "beguin" class = "container">
+        <h1>Le Grand Q</h1>
+        <div id = "explanation">
+            <button id = "rule">Rules</button>
+            <ul id = "explRule">
+                <li><span class="highlight">Aim of the game</span>: matching user numbers with computer numbers within the same array position.</li>
+                <li><span class="highlight">Budget</span> works as a bank. Insert your initial budget and press <span class="highlight">OK</span> (min = "1" max = "999"). </li>
+                <li><span class="highlight">Single bet</span> is a withdrawal from <span class="highlight">budget</span>. It can never be higher than <span class="highlight">current budget</span>.</li>
+                <li>Push <span class="highlight">Grand Q </span>button and good luck!</li>
+                <li>If <span class="highlight">budget</span> is equal to <span class="highlight">"zero" -> GAME OVER</span></li>
+                <li>From drop-down menu <span class="highlight">Wanna play</span> select <span class="highlight">END/RELOAD</span> to leave/restart. You can quit at any time.</li>
+                <li>
+                <div id="prizeList">
+                    PRIZE:<br>
+                    <p id = "g-q">5/5: bet x 100  "Le Grand Q"</p> 
+                    <p>4/5: bet x 20</p>
+                    <p>3/5: bet x 5</p>
+                    <p>2/5: bet x 1</p>
+                    <p>1/5: bet x 0</p>
+                    <p>0/5: bet x 0</p>
+                </div>
+                </li>
+                <li><button id = "hide-rules">Exit Rules</button></li>
+            </ul>
+        </div>
+        <div id="wanna-play">
+            <h3>Wanna play?</h3>
+            <select name = "play" id = "quit" class = "playYoN">
+                <option value = "YES">YES</option>
+                <option value = "END/RELOAD">END/RELOAD</option>
+            </select>
+        </div>
+    </section>
+<!--final messages-->
+    <section id = "end-data" class = "container">
+        <div id="game-over">
+            <h3>GAME OVER</h3>
+            <h5>Sei un bel pirla!</h5>
+        </div>
+        <span id = "final-earning-text">Final earns &#10142; </span><div id="final-earning"></div>
+        <div id="final-msg">
+            <div id="won-msg">
+                <p class = "end-msg-won">This time you have been lucky!</p>
+            </div>
+            <div id="draw-msg">
+                <p class = "end-msg-draw">Nothing times nothing is better than nothing<img src = "/media/lord.JPG"/></p>
+            </div>
+            <div id="lost-msg">
+               <p class = "end-msg-lost">Hope you did not loose too much!</p>
+               <p class = "end-msg-lost">Anyway, life goes on!</p>
+            </div>
+        </div>
+    </section>
+<!--end final nmessage-->
+<!--start-->
+    <section id = "prepare" class = "container">
+        <div id="block-ini-bud" class = "the-blocks">
+            <div id = "for-ini-bud" class="controlab">
+                <label for = "ini-budget" class = "lab">Initial budget</label>
+            </div>
+            <div id="inp-ini-bud">
+                <span class = "icon-money">£ </span><div id="initial-budget"></div>
+                <!--hidden input to grab value in final calculation-->
+                <input type = "text" id = "hidden-inp">
+                <!--end hidden input-->
+            </div>
+        </div>
+        
+            <div class="controlab" id = "for-ins-bud">
+                <label for = "budget" class = "lab" id = "label-insert">Insert budget </label>
+            </div>
+            <div id="inp-bud">
+                <span class = "icon-money">£ </span><input type = "number" id = "budget" class = "patrimony" min="1" max="999">
+                <button id = "budget-ini-btn" class = "patrimony">OK</button>
+            </div>
+            <div id="error-budget-length">Budget cannot be higher than £ 999 or lower than 0.</div>
+        <div id="block-current-bud" class = "the-blocks">
+            <div class="controlab">
+                <label for = "money-bag" class = "lab">Current budget</label>
+            </div>
+            <span class = "icon-money">£ </span><div id = "money-bag"></div><div id="graphic-money"></div>
+        </div>
+    </section>
+
+    <main id = "main-block">
+
+        <section id = "single-bet" class = "container">
+            <div class="controlab">
+                <label for = "bet" class = "lab">Insert single bet</label>
+            </div>
+            <div id="cont-inp-bet">
+                <span class = "icon-money">£</span><input type = "number" id = "bet">
+            </div>
+        </section>
+
+<!--error-->
+        <aside>
+            <div id = "error-bet" class = "error">Single bet cannot be higher than budget or equal or less than 0.</div>
+        </aside>
+<!--end error-->
+        <section id = "input" class = "container">
+            <form id = "insert-data">
+                <div class="controlab">
+                    <label for = "un1 un2 un3 un4 un5" class = "lab">User numbers </label>
+                </div>
+                <div id="selectContainer" class = "input-container">  
+                    <input type = "text" id = "un1" class = "user-Inp">
+                    <input type = "text" id = "un2" class = "user-Inp">  
+                    <input type = "text" id = "un3" class = "user-Inp"> 
+                    <input type = "text" id = "un4" class = "user-Inp">
+                    <input type = "text" id = "un5" class = "user-Inp">
+                        
+                        <input type = "submit" value = "Gran Q" id ="subm">
+                </div>
+                <div id="error-select">Every field must have a number</div>
+            </form>
+            
+                
+            <div id="pc-num-container">
+                <div class="controlab">
+                    <label for = "cn1 cn2 cn3 cn4 cn5" class = "lab">Computer's numbers</label>
+                </div>
+                <div id="pcDataContainer" class = "input-container"> 
+                    <input type = "text" id = "cn1" class = "pc-Inp">
+                    <input type = "text" id = "cn2" class = "pc-Inp">
+                    <input type = "text" id = "cn3" class = "pc-Inp">
+                    <input type = "text" id = "cn4" class = "pc-Inp">
+                    <input type = "text" id = "cn5" class = "pc-Inp">
+                </div>
+            </div>
+            <div id="game-over">GAME OVER!</div>
+        </section>
+        <!--massages on the go, no media available in this version-->
+        <!--
+        <section id = "message" class = "container">
+            <div id = "zero-matches">
+                <p class = "mess-z"><img src = "/media/cagaaddoss.jpg"/>Solita scusa della diarrea?</p>
+                <p class = "mess-z"><img src = "/media/trottola.jpg"/>Stai girando a vuoto!</p>
+                <p class = "mess-z"><img src = "/media/cesso.JPG"/>Continua a bere l'acqua del rubinetto...</p>
+                <p class = "mess-z"><img src = "/media/avanti.jpg"/>Ciccio! Qui se andiamo avanti cosi'...</p>
+                <p class = "mess-z"><img src = "/media/farfalle.jpg"/>Continuiamo ad andare a farfalle?</p>
+                <p class = "mess-z"><img src = "/media/pappa.jpg"/>Non vorrei tu ti stia riducendo ad una pappa...</p>
+                <p class = "mess-z"><img src = "/media/colpi.jpg"/>Perdi colpi a vista d'occhio.</p>
+                <p class = "mess-z"><img src = "/media/coniglio.jpg"/>Cerchi conigli nel cilindro?</p>
+                <p class = "mess-z"><img src = "/media/salame.jpg"/>Pane e cioccolata o panino col salame?</p>
+                <p class = "mess-z"><img src = "/media/watergun.jpg"/>Una pistola scarica...</p>
+                <p class = "mess-z"><img src = "/media/merda.jpg"/>Piu' duro del budino al cioccolato</p>
+                <p class = "mess-z"><img src = "/media/pastina.jpg"/>Vuoi della pastina?</p>
+                <p class = "mess-z"><img src = "/media/eyebubs.jpg"/>Cosi facendo, danneggi tu e gli altri?</p>
+                <p class = "mess-z"><img src = "/media/ubriaco.jpg"/>E tutte quelle bottiglie vuote?</p>
+            </div>
+            <div id = "one-matches">
+                <p class = "mess-1"><img src = "/media/sognare-cioccolata-1.jpg"/>Manco una buatta di marmellata...</p>
+                <p class = "mess-1"><img src = "/media/indice.jpg"/>Seeee una alla volta...</p>
+                <p class = "mess-1"><img src = "/media/piani.jpg"/>Dovresti rivedere i tuoi piani!</p>
+                <p class = "mess-1"><img src = "/media/cacare1.jpg"/>Ci sono delle grosse difficolta'!</p>
+                <p class = "mess-1"><img src = "/media/tonto.jpg"/>Sei tu Pino per via di un albero? </p>
+                <p class = "mess-1"><img src = "/media/palle.jpg"/>Minkia! Che bello sto gioco...</p>
+                <p class = "mess-1"><img src = "/media/soldi.jpg"/>Ci stai smenando i soldi...</p>
+                <p class = "mess-1"><img src = "/media/cioccolata.jpg"/>Cioccolata? Perche' c'e' odore di merda?</p>
+                <p class = "mess-1"><img src = "/media/pipe.jpg"/>Ne carne ne pesce.</p>
+                <p class = "mess-1"><img src = "/media/non-riesci.jpg"/>Non riesci a farcela.</p>
+                <p class = "mess-1"><img src = "/media/barracuda.jpg"/>Hai mai sentito parlare di Robert Barracuda? </p>
+                <p class = "mess-1"><img src = "/media/pollo.jpg"/>Il pollo va cucinato per bene.</p>
+                <p class = "mess-1"><img src = "/media/qconlamer.jpg"/>E' come pulirsi il culo con la merda</p>
+                <p class = "mess-1"><img src = "/media/cavallieporci.jpg"/>Leggi "Cavalli & Porci"?</p>
+                <p class = "mess-1"><img src = "/media/gold.jpeg"/>Non riesci ad esprimerti</p>
+            </div>
+            <div id = "two-matches">
+                <p class = "mess-2"><img src = "/media/tonispagna.jpg"/>Non fare il bellinibusto! Due ne hai beccate!</p>
+                <p class = "mess-2"><img src = "/media/ilmeglio.jpg"/>Stai cercando di fare del tuo meglio?</p>
+                <p class = "mess-2"><img src = "/media/occhio.jpg"/>Occhio malocchio prezzemolo e finocchio.</p>
+                <p class = "mess-2"><img src = "/media/tappare.jpg"/>Tappare i buchi e' una soluzione temporanea.</p>
+                <p class = "mess-2"><img src = "/media/vongole .JPG"/>Meglio di un dito nel naso...</p>
+                <p class = "mess-2"><img src = "/media/sgru.png"/>Sembra che tu ti stia dando una sgrullata.</p>
+            </div>
+            <div id = "three-matches">
+                <p class = "mess-3"><img src = "/media/zio-scorra.jpeg"/>Ciumbia la mostarda!</p>
+                <p class = "mess-3"><img src = "/media/IMG_1219.jpeg"/>Piani per il fine settimana?</p>
+                <p class = "mess-3"><img src = "/media/calma.jpg"/>Stai diventando un duro!</p>
+                <p class = "mess-3"><img src = "/media/nano.jpg"/>Nano nano manzo manzo!</p>
+            </div>
+            <div id = "four-matches">
+                <p class = "mess-4"><img src = "/media/IMG_1228.jpg"/>Wella!!! La porti sulla Limousine?</p>
+                <p class = "mess-4"><img src = "/media/bar.jpg"/>Occhio a non spenderli tutti al bar!!!</p>
+                <p class = "mess-4"><img src = "/media/poker.jpg"/>Se continui cosi ti fai la casa nuova</p>
+            </div>
+            <div id = "five-matches">
+                <p class = "mess-q" id = "q"><img src = "/media/IMG_1217.jpeg"/>El bus del Q</p>
+            </div>
+        </section>
+    -->
+<!--end messages-->
+        <section id = "output" class = "container">
+            <table id = "results">
+                <tr>
+                    <th scope = "col">Bet</th>
+                    <th scope = "col">Match</th>
+                    <th scope = "col">Won</th>
+                    <th scope = "col">Budget</th>
+                </tr>
+                <tbody id = "table-body"></tbody>
+            </table>
+        </section>
+    </main>    
+</body>
+</html>

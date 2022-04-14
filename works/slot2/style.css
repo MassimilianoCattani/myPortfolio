@@ -1,0 +1,259 @@
+*{
+    margin:0;
+}
+body{
+    width:90%;
+    margin:auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    margin: 1em;
+}
+h1{
+    color:rgb(43, 156, 113);
+    font-style: italic;
+    text-shadow: #000 1px 1px;
+    font-size: 40px;
+    margin-top:0.5em;
+    padding:0.3em;
+    border: 1px rgb(43, 156, 113) solid;
+    border-radius:5px;
+}
+/*=======================================================================*/
+/*instructions*/
+#rule{
+    margin-top:0.3em;
+}
+#explRule{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#50c0ff;
+    border:solid 5px #888;
+    border-radius:5%;
+    box-shadow: #cccf 5px 5px ;
+    margin:0.5em;
+    padding-bottom:0.5em;
+    display:none;
+}
+li{
+    margin-top:0.5em;
+    padding-right:0.5em;
+}
+#explRule li:last-child{
+    list-style-type: none;
+    text-align: center;
+}
+.highlight{
+    font-weight:bold;
+    font-style:italic;
+    text-decoration: underline;
+}
+#prizeList{
+    font-family:cursive;
+    background-color: #fff000;
+    width:70%;
+    padding:0.5em;
+    border: solid 2px orange;
+    border-radius:5px;
+}
+#g-q{
+    background-color: orangered;
+    color:yellow;
+    padding-left:0.2em;
+    border-radius: 5px;
+    font-weight:bold;
+}
+/* end instructions*/
+/*=======================================================================*/
+/*final data*/
+#won-msg, #draw-msg, #lost-msg, #final-earning-text{
+    display:none;
+    color:rgb(0, 26, 255);
+    font-size: 25px;
+}
+#final-earning{
+    color:orangered;
+    font-size: 35px;
+}
+/* end final data*/
+/*=======================================================================*/
+/*hidden input for final calc*/
+#hidden-inp{
+    display:none;
+}
+/* end hidden input*/
+/*the blocks*/
+#block-ini-bud{
+    display:none;
+}
+#inp-ini-bud{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#for-ins-bud, #inp-bud{
+    background-color: #ccc;
+    padding:2%;
+}
+#block-ini-bud{
+    padding:3%;
+    border:5px solid rgb(43, 156, 113);
+    border-radius:5px;
+    color:rgb(43, 156, 113);
+    font-size:1em;
+}
+#block-current-bud{
+    color:#fff;
+    background-color: #555;
+    padding:3%;
+    font-size:25px;
+    border: 5px solid #ccc;
+    border-radius:5px;
+    
+}
+/*end blocks*/
+/*=======================================================================*/
+#main-block{
+    display:none;
+}
+#prepare, #insert-data, #pc-num-container, #single-bet {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#single-bet{
+    color:#fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1em;
+    margin-bottom: 3em;
+    background-color: rgb(43, 156, 113);
+    width:57%;
+    padding:3%;
+}
+#bet{
+    width:50px;
+    margin-left: 0.3em;
+    margin-top:0.3em;
+}
+.user-Inp{
+    width:25px;
+}
+.pc-Inp{
+    width:25px;
+}
+#wanna-play{
+    text-align: center;
+}
+#budget{
+    width:45px;
+}
+.coins{
+    height:5px;
+    width:5px;
+    background-color: rgb(231, 218, 31);
+    border-radius:50%;
+    padding:1px;
+    float:left;
+}
+#block-current-bud, #money-bag{
+    display:none;
+}
+.controlab{
+    width:180px;
+}
+.input-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(43, 156, 113);
+}
+/*game over messages*/
+h5{
+    padding:0.5em;
+    text-shadow: #500fc0 1px 1px;
+}
+/*end game over messages*/
+/*messages*/
+.mess-z, .mess-1, .mess-2, .mess-3, .mess-4{
+    color:#500fc0;
+    display:none;
+}
+.mess-q{
+    display:none;
+    background-color: orangered;
+    color:yellow;
+    font-size:25px;
+    padding:0.5em;
+}
+/* end messages*/
+#pc-num-container{
+    margin-top:1em;
+}
+#results th{
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border:double black 2px;
+    background-color: #ccc;
+}
+#table-body:first-child > td{
+    border: solid #ff0000 3px;
+}
+#subm{
+    margin-left:2em;
+    color:rgb(43, 156, 113);
+    font-weight: bold;
+}
+/*errors*/
+.error, #error-budget-length, #error-select{
+    display:none;
+    color:#ff0000;
+    font-size:22px;
+}
+
+/*end errors*/
+#game-over{
+    display:none;
+    font-size: 25px;
+    color:#fff;
+    background-color: #ff0000;
+}
+
+td{
+    text-align:center;
+}
+/*img*/
+img{
+    height:50px;
+    width:50px;
+    border: solid 1px #500fc0;
+    margin-right:0.5em;
+}
+@media screen and (max-width: 320px){
+    #single-bet{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+} 
+@media screen and (max-width: 500px){
+    h1{
+        text-align: center;
+    }
+    .container{
+        margin:0.5 em;
+    }
+    #main-block{
+        margin-top: 0;
+    }
+    #block-ini-bud{
+        height:30px;
+    }
+    #single-bet{
+        margin-top:0;
+        margin-bottom: 0.5em;
+
+    }
+    img{
+        height:80px;
+        width:80px;
+    }
+}
