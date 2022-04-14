@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"> 
+</head>
+<body>
+    <div id="pagewrapper">
+        <header id="main-header">
+            <div class="head-container">
+                <div id="branding">
+                    <img src="media/index-img/logo.jpg">
+                </div>
+            <nav id="primarynav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pag2.html">Prod-1</a></li>
+                    <li><a href="pag3.html">Shop</a></li>
+                    <li><a href="pag4.html">Dealer</a></li>
+                    <li><a href="pag5.html">Gallery</a></li>
+                    <li><a href="pag6.html">Social</a></li>
+                    <li><a href="pag7.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="slide-container">
+                <img class="mySlides" src="media/media-blue/media-02/landscape-04.jpg">
+                <img class="mySlides" src="media/media-green/media-02/green-03.jpg">
+                <img class="mySlides" src="media/media-red/media-02/red-04.jpg">
+                <img class="mySlides" src="media/media-yellow/media-02/yellow-04.jpg">
+                    <div class="bottoncini">
+                <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+            </div>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs (n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function showDivs(n) {
+                        var i;
+                        var x =
+                        document.getElementsByClassName ("mySlides");
+                            if (n > x.length) {slideIndex = 1
+                            }
+                            if (n < 1) {slideIndex = x.length
+                            }
+                            for (i = 0; i < x.length; i++) {
+                                x [i] .style.display = "none";
+                        }
+                            x[slideIndex -1] .style.display ="block";
+                    }
+                </script>
+                <div class="pic-container">
+                        <div class="box-1"></div>
+                        <div class="box-2"></div>
+                        <div class="box-3"></div>
+                        <div class="box-4"></div>
+                </div>
+        </main>
+        <footer><p>Max Scratch &copy;</p></footer>
+    </div>
+    
+</body>
+</html>

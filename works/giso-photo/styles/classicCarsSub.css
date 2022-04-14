@@ -1,0 +1,44 @@
+header{
+    background-image: url(../media/cars/gall-car/square/car111.jpg);
+}
+h1{
+    color:#fff;
+}
+#coat-no-sized{
+    column-count: 5;
+}
+.intro-gallery-pic{
+   
+    width:100%;
+}
+.intro-gallery-pic img{
+    width:100%;
+}
+@media screen and (max-width: 1058px){
+   
+    #coat-no-sized{
+        column-count: 4;   
+    }
+}
+@media screen and (max-width: 800px){
+    #coat-no-sized{
+        column-count: 3;  
+        column-gap: 2px; 
+    }
+}
+@media screen and (max-width: 750px){
+    #span-ruler{
+        position:relative;
+        top:280px;
+    }
+}
+@media screen and (max-width: 380px){
+    #coat-no-sized{
+        column-count: 2;  
+         
+    }
+    #span-ruler{
+        position:relative;
+        top:200px;
+    }
+}

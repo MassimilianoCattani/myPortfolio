@@ -1,0 +1,48 @@
+header{
+    background-image: url(../media/cars/gall-car/orizontal/IMG_cover.jpg);
+    background-size: cover;
+}
+h1{
+    color:#ccce50;
+    margin-top:200px;
+
+}
+#coat-no-sized{
+    column-count: 5;
+}
+.intro-gallery-pic{
+   
+    width:100%;
+}
+.intro-gallery-pic img{
+    width:100%;
+}
+@media screen and (max-width: 1058px){
+   
+    #coat-no-sized{
+        column-count: 4;   
+    }
+}
+@media screen and (max-width: 800px){
+    #coat-no-sized{
+        column-count: 3;  
+        column-gap: 2px; 
+    }
+}
+@media screen and (max-width: 750px){
+    #span-ruler{
+        position:relative;
+        top:280px;
+    }
+}
+@media screen and (max-width: 380px){
+    
+    #span-ruler{
+        position:relative;
+        top:200px;
+    }
+    #coat-no-sized{
+        column-count: 2;  
+         
+    }
+}

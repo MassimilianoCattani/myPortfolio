@@ -1,0 +1,83 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+#mainCalcHisto{
+    
+    overflow: hidden;
+    padding-bottom:2em;
+    
+}
+#wrapper{
+    width:250px;
+    margin:auto;
+    margin-top:5vh;
+    
+}
+#display{
+    height:7em;
+    width:90%;
+    margin:auto;
+    font-size: 22px;
+    font-family:sans-serif;
+    
+}
+
+#history{
+    overflow-y:auto;
+    width:90%;
+    height: 5em;
+    margin:auto;
+    word-wrap: break-word;
+    text-align:right;
+    align-self: baseline;
+    padding-right:2vh;
+    font-size:16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#result{
+    width:90%;
+    
+    margin:auto;
+    padding-left:2vh;
+    padding-top:1px;
+    margin-bottom:2vh;
+    color:gainsboro;
+    background-color: #555;
+}
+#current{
+    width:90%;
+    margin:auto;
+    
+    text-align: right;
+    padding-right:2vh;
+    word-wrap: break-word;
+}
+#keyboard{
+    width:90%;
+    margin:auto;
+    
+}
+button{
+    width:50px;
+    height:50px;
+    border-radius: 20%;
+    margin-top:4px;
+    box-shadow: #ccc 2px 2px;
+    cursor:pointer;
+    border:none;
+    background-color: gainsboro;
+    font-size:20px;
+    font-style: italic;
+    color:#555;
+}
+#zero{
+    width:104px;
+    border-radius:10%;
+}
+#C, #CE, #percentage, #divi{
+    border-top: 1px solid #ccc;
+}

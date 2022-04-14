@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-image: url('../media/contact-media/IMG_1529.jpeg');
+    background-size:cover;
+}
+h1{
+    color:#0088cc;
+    width:58%;
+    padding-top:200px;
+    margin:auto;
+    text-align: center;
+    font-size:3em;
+    font-family:external-font;
+    text-shadow: 5px 5px #006699;
+    
+}
+#id-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-top:0.5em;  
+}
+#photographer{
+    width:50%;
+    text-align: end;
+    
+}
+#photographer img{
+    border:1px solid #006699;
+    border-radius: 10px;
+}
+#cont-id{
+    width:50%;
+}
+#cont-id figure img{
+    width: 70%;
+    padding-top:10%;
+    padding-left:5%;
+}
+form{
+    margin-top:1em; 
+    padding-bottom:1em;
+    width:60%;
+    margin:auto;
+}
+fieldset{
+    background-color:#fff;
+    border:1px solid rgb(209, 215, 241);
+    border-radius:5px;
+    width:100%;
+    margin:0 0 1em 0;
+    box-shadow: rgb(209, 215, 241) 5px 5px 5px;
+    padding:2em;
+}
+legend{
+    font-family:external-font;
+    font-size:2.0em;
+    color:#006699;
+    margin:auto;
+    width:50%;
+}
+.controlgroup{
+    padding-bottom:1em;
+    margin-left:1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    padding-right:0.5em;
+    width:25%;
+    font-size:1.2em;
+    font-weight:bold;
+}
+input[type=text], input[type=email], textarea{
+    width:60%;
+}
+textarea{
+    height:100px;
+}
+#l3:after, #l5:after{
+    content:"*";
+    color:#ff0000;
+}
+input[type=submit]{
+    margin:0 0 1em 1em;
+    height:25px;
+    width:15%;
+    border-radius:5px;
+    cursor: pointer;
+    font-size:18px;
+}
+
+@media screen and (max-width: 1380px){
+    #cont-id figure img{
+        width: 100%;
+       
+    }
+    form{
+        width:70%;
+    }
+}
+@media screen and (max-width: 1280px){
+    
+    legend{
+        width:80%;
+        padding-top:1em
+    }
+    label{
+        width:35%;
+    }
+   
+    legend{
+        padding-bottom:1em;
+    }
+}
+@media screen and (max-width: 1058px){
+    h1{
+        padding-top:250px;
+        width:100%;
+        text-align: center;
+        
+    }
+    #cont-id figure img{
+        padding-top:100px;
+        padding-left:5%;
+    }
+    form{
+        width:100%;
+    }
+    legend{
+        width:60%;
+    }
+    label{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 750px){
+    #id-card{
+        width:100%;
+     
+    }
+    #photographer{
+        width:100%;
+        text-align: center;
+    }
+    #cont-id{
+        width:100%;
+    }
+    #cont-id figure img{
+        padding-top:0px;
+        padding-left:0%;
+        margin:auto;
+    }
+}
+@media screen and (max-width: 643px){
+    
+    legend{
+        width:50%;
+        font-size:20px;
+    }
+    label{
+        text-align: left;
+        width:100%;
+        font-size:1em;
+        font-weight:bold;
+    }
+    input[type=text], input[type=email], textarea{
+        width:90%;
+        
+    }
+    input[type=text], input[type=email]{
+        height:2em;
+    }
+    input[type=submit]{
+        width:20%;
+        float:right;
+        margin:1em;
+    }
+}
+@media screen and (max-width: 400px){
+    
+    legend{
+        width:100%;
+        font-size:20px;
+    }
+    input[type=submit]{
+        width:36%;
+    }
+}

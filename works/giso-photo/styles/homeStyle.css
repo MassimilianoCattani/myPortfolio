@@ -1,0 +1,14 @@
+header{
+    background-size: cover;
+}
+#welcome{
+    color:#fff;
+    width:58%;
+    padding-top:200px;
+    margin:auto;
+    text-align: center;
+    font-size:3em;
+    font-family:external-font;
+    text-shadow: 5px 5px #555;
+    
+}

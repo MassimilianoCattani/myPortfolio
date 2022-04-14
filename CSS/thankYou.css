@@ -1,0 +1,18 @@
+header{
+    background-image: none;
+}
+main{
+    text-align: center;
+}
+h1{
+    color:seagreen;
+    text-shadow: none;
+}
+h3{
+    color:rgb(73, 73, 247);
+    font-size:2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    font-family: font-three;
+}

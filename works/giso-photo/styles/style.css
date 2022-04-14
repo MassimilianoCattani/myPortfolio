@@ -1,0 +1,469 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+@font-face{
+    font-family:external-font;
+    src:url(MontereyFLF-Bold.ttf);
+}
+/* * { outline: 1px red solid !important; visibility: visible !important } */
+/*----------------------------------------------------------------------------------------------------------*/
+/* "help against overflow-X on mobile" ( I may try to comment it out to see if mobile version come out correctly anyway, but I leave it because it seems to work so). By the way fixing extra padding/margin of elements seems to be a good solution too.*/
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+}
+/* end "help against overflow-X on mobile"*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+header{
+    background-image: url("../media/img-layout/IMG_7997-1024x683.jpg");
+    height:500px;
+    width:100%;
+    background-size: cover;
+    
+    display:inline-block;
+   /* flex-direction: row;*/
+   /* flex-wrap: wrap;*/
+}
+
+#logo{
+    width:30%;
+    float:left;
+}
+
+#logo img{
+    width:100%;
+    margin: 10px 0px 0px 2em;
+}
+
+.topnav{
+    float:right;
+    width:61%;
+    margin:0 0 0 7em; 
+    height:20%;
+    padding: 2em 0.5em 0 0.5em; 
+    background-color: rgb(0,0,0,0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.topnav a{
+    text-decoration:none;
+    color:#fff;
+    font-size:30px;
+    margin-right:3em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.topnav a:first-child{
+    margin-left:3em;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:#fff;
+    cursor:pointer;
+    margin:0.2em;
+    transition: all 0.3s ease;
+}
+.burger {
+    display:none;
+}
+nav .active{
+    color:rgb(167, 62, 51);
+}
+#footer-nav .active{
+    color:rgb(167, 62, 51);
+}
+
+/*main sections------------------------------------------------------------------------------------------------------*/
+main{
+    width:80%;
+    margin: auto;
+    
+}
+.container{
+    text-align: center;
+}
+#upper-case{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:0.5em;
+    box-sizing: border-box;
+}
+#upper-case img{
+    width:100%;
+
+}
+.img-holder{
+    width:33.3333%;
+    padding-left:0.5em;
+}
+.img-holder:first-child{
+    padding-left: 0;
+}
+.left, .middle, .right{
+    display:none;
+    animation-name: movimento;
+    animation-duration: 500ms;
+}
+
+#btnGallery{
+    font-family: external-font;
+    height:3em;
+    width:100%;
+    margin-top:1em;
+    padding:1em;
+    background-color: rgb(167, 62, 51);
+    border: 1px solid rgb(167, 62, 51);
+    border-radius: 10px;
+    color:#fff;
+    font-size:20px;
+}
+
+#btnGalleryContMobile{
+    display:none;
+    width:33%;
+}
+#btnGalleryMobile{
+    padding:0.5em;
+    background-color: rgb(167, 62, 51);
+    border: 1px solid rgb(167, 62, 51);
+    border-radius: 10px;
+    color:#fff;
+}
+#btnGallery:hover{
+    background-color:  rgb(99, 32, 25);;
+}
+
+@keyframes movimento{
+    0%{opacity:0.7;}
+    100%{opacity:0;}
+}
+figcaption{
+    font-style:italic;
+}
+/*footer--------------------------------------------------------*/
+#img-footer{
+    background-image: url("../media/img-layout/backGallery.jpg");
+    width:100%;
+    height:200px;
+    background-size: cover;
+    margin-top:0.5em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#overlay{
+    width:100%;
+    height:200px;
+    background-color: #000;
+    opacity:0.8;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-sections{
+    width:33.3333%;
+   
+}
+#text-footer{
+  
+    text-align: center;
+    padding-top:3%;
+    
+}
+.foot-info{
+    color:#fff;
+    padding-bottom:0.5em;
+    font-size:22px;
+  
+}
+#logo-foot{
+    width:100;
+    display:none;   
+    margin-left:2.5em; 
+}
+#mail{
+    text-decoration:none;
+    color:#fff;
+    
+}
+#mail:hover{
+    color: rgb(167, 62, 51);
+}
+/*social*/
+#social{
+    align-content: center;
+    align-self: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#social figure{
+    width:33.3333%;
+    text-align: center;
+}
+
+/*footer nav*/
+#footer-nav{
+    align-self:flex-end;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left:10%;
+    text-align: center;
+    padding-top:8%;
+    
+
+}
+#footer-nav a{
+    text-decoration: none;
+    color:#fff;
+    font-size:22px;
+    padding:5%;
+}
+
+#footer-nav a:hover{
+    color: rgb(167, 62, 51);
+}
+/*----------media queries----------------------------------------------*/
+
+@media screen and (max-width: 1668px){
+    .topnav{
+        padding-left:0em;
+        margin:0
+    }
+}
+@media screen and (max-width: 1382px){
+    .topnav a{
+        margin-right:1.5em;
+        margin-bottom:3em;
+    }
+}
+@media screen and (max-width: 1296px){
+    .topnav a{
+        font-size:20px;
+        margin-right:3em;
+    }
+    #logo{
+        width:30%;
+    }      
+}
+@media screen and (max-width: 1058px){
+    header{
+        display:inline-block;
+    }
+    #logo{
+        float:left;
+    }
+    .topnav{
+        float:right;
+        width:50%;
+    }
+    .topnav a{
+        margin-right:1em;
+        margin-bottom:3em;
+    }
+    #btnGallery{
+        
+        font-size:18px;
+    }
+}   
+@media screen and (max-width: 948px){
+    #footer-nav a{
+        width:50%;
+        font-size:22px;
+        padding:8%; /*<--In case of overflow problem on mobile check this*/
+    }
+    
+}
+
+@media screen and (max-width: 937px){
+    .topnav{
+        width:60%;
+    }
+
+    #logo{
+        width:40%;
+    }
+    #logo img{
+        width:100%;
+        margin: 0px 0px 0px 0em;
+    }
+}
+
+@media screen and (max-width: 761px){
+   
+   .topnav{
+       
+       position:absolute;
+       right:0px;
+       top:15vh;
+       height: 100%;
+       display:flex;
+       flex-direction:column;
+       align-items: center;
+       border-top-left-radius: 20px;
+       border-top-left-radius: 20px;
+       border-bottom-right-radius: 0px;
+       background-color: rgb(0,0,0,0.7);
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+       
+   }
+   .topnav a{
+       margin-bottom:3vh;
+     /*  margin-right:7vh;*/
+       opacity:0;
+   }
+   .topnav a:first-child{
+       margin-left:0;
+   }
+
+   .burger{
+       display:block;
+       float:right;
+       margin-right: 2vh;
+       margin-top:4vh;
+       padding:2vh;
+       background-color: rgb(0,0,0,0.7);
+       border-radius: 20px;
+   }
+   body{
+       overflow-x: hidden;
+   }
+  
+   #btnGallery{
+       font-size:16px;
+       margin-top:0.2em;
+   }
+ 
+ 
+   .foot-info{
+    font-size:18px;
+  
+    }
+    #logo-foot{
+        display:block;
+        width:100px;
+    }
+    #social figure{
+        width:100%;  
+    }
+   .social-icon{
+       width:25%;
+       padding-top :0.1em;
+   }
+   #footer-nav a{
+       width:100%;
+       padding:5%;
+       font-size:18px;
+    }
+}
+@media screen and (max-width: 554px){
+    #btnGallery{
+        padding-top:0.2em;
+    }
+}
+@media screen and (max-width: 500px){
+    
+    header{
+        background-position: 25% 45%;
+        background-size: 150%;
+        height:320px;
+    }
+    
+    
+   
+    #logo img{
+        margin: 10px, 0px, 0px, 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding:2vh;
+        border-radius: 20px;
+    }
+    #logo{
+        width:50%;
+        margin:1em;
+    }
+    .topnav{
+        height: 20%;
+        width:40%;
+       /* padding-right:5vh;*/
+    }
+    .container{
+        width:80%;
+        margin: auto;
+    }
+    #upper-case img{
+        width:100%;
+    }
+    .img-holder{
+        width:100%;
+        margin-top:0.5em;
+        padding-left: 0;
+    }
+    #logo-mid{
+        display:none;
+    }
+    #btnGalleryCont{
+        display:none;
+    }
+    #btnGalleryContMobile{
+        display:block;
+        width:100%;
+        font-family: external-font;
+    }
+    #btnGalleryMobile{
+        margin:1em 0 1em 0;
+        font-size:20px;
+    }
+    .foot-info{
+        padding-left:0.3em; 
+    }
+  
+    #logo-foot{
+        width:80px;
+        display:block;
+        
+    }
+}
+@media screen and (max-width: 400px){
+    #logo-foot{
+        position:absolute;
+        right:0.5em;
+        bottom:10px;
+    }
+    
+}
+
+.topnav-active{
+    transform: translateX(0%);
+}
+@keyframes topNavLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+ 
+}
+.toggle .line2{
+    opacity:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+   
+}

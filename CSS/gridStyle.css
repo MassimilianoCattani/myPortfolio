@@ -1,0 +1,32 @@
+#grid-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:30px 0 1em 0;
+}
+#grid-container a{
+    width:200px;
+    height:200px;
+    text-decoration: none;
+    font-family: font-one;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:rgba(11, 110, 156);
+    text-align: center;
+}
+h2{
+    margin:1em 0 0 0em;
+}
+img{
+    width:80%;
+}
+@media screen and (max-width: 550px){
+    h2{
+        margin:0.5 0;
+        text-align: center;
+    }
+    #grid-container a{
+        width:50%;
+        margin: 1.5em 0;
+    }
+}

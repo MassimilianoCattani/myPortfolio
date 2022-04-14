@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(../media/asia-wedding-20/orizontal/IMG_8264.jpg);
+    background-size:cover;
+}
+
+h1{
+    color:#fff;
+    width:50%;
+    margin:auto;
+    text-align: center;
+    font-size:3em;
+    font-family:external-font;
+    text-shadow: 5px 5px #555;
+    padding-top:200px;
+}
+#coat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.gallery{
+    width:33.33%;
+}
+.intro-gallery-img{
+    padding:0.5em;
+}
+.intro-gallery-img{
+    width:100%;
+}
+h5{
+    font-family:external-font;
+    text-align: center;
+    font-size:16px;
+}
+@media screen and (max-width: 1058px){
+    h1{
+        width:58%;
+        padding-top:250px;
+    }
+}
+@media screen and (max-width: 700px){
+    h1{
+        width: 67%;
+    }
+    .topnav{
+        height:35%;
+    }
+    h5{
+        text-align: center;
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    h1{
+        width: 72%;
+    }
+    .gallery{
+        width:50%;
+    }
+}
+@media screen and (max-width: 350px){
+    h1{
+        width:75%;
+        font-size:2em;
+    }
+}

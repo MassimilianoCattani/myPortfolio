@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    background-image: url(../media/contact-media/IMG_2227-1-1024x706.jpg);
+    background-size:cover;
+    background-position: 25% 45%;
+    
+}
+h1{
+    color:#fff;
+    width:58%;
+    padding-top: 200px;
+    text-align: right;
+    font-size:3em;
+    font-family:external-font; 
+    text-shadow: 5px 5px #555;
+}
+
+#intro-service{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:0.5em;
+}
+#intro-panel img{
+    box-shadow:5px 5px 8px #666;
+}
+.panel-intro{
+    width:50%;
+    align-self: center;
+    font-weight: bold;
+}
+.panel-intro img{
+    width:100%;
+}
+.panel-intro h2{
+    text-align: center;
+}
+.intro-text-cont{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.intro-text-cont figure{
+    width:10%;
+    margin-left:15%;
+}
+.intro-text-cont img{
+    width:100%;
+    padding:0.5em;
+}
+.intro-text-cont p{
+    align-self: center;
+}
+#quadrant-cont{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.quadrant{
+    width:50%;
+    padding:0.5em;
+    background-color: rgb(209, 215, 241);
+}
+.quadrant figure{
+    float:left;
+    width:40%;
+    margin-right:1em;
+}
+.quadrant figure img{
+   width:100%;
+   box-shadow:5px 5px 8px #666;
+   border-radius: 5px;;
+}
+h5{
+    font-family: external-font;
+    color:chocolate;
+}
+.quadrant h3, p{
+    padding:0.5em;
+    font-size:22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quadrant h3{
+    font-style: italic;
+}
+.quadrant p{
+    text-align: justify;
+}
+.obl{
+    font-style: italic;
+}
+#service-gallery-link a{
+    color:chocolate;
+    font-style: italic;
+}
+#collaboration a {  /*this is collaboration <a> <h3>*/
+    text-decoration: none;
+}
+#collaboration p{
+    width:50%;
+    margin:auto;
+    text-align: justify;
+}
+#collaboration h3{
+    text-align: center;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+#collaboration h3:first-child{
+    font-style:unset;
+    position:relative;
+    left:43%;
+    width:15%;
+    margin-top:1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:22px;
+    cursor: pointer;
+    background-color: rgb(167, 62, 51);
+    color:#fff;
+    padding:0.2em;
+    border-radius: 10px;
+
+    margin-bottom: 0;
+
+}
+#collaboration p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#coll-frame{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+#coll-frame figure{
+    width:25%;
+    height:5%;
+    padding:0.5em;
+    max-width: 190px;
+}
+#coll-frame img{
+    width:100%;
+}
+#coll-frame figure:nth-child(8), #coll-frame figure:nth-child(10){
+   
+    align-self: center;
+}
+
+@media screen and (max-width: 1121px){
+    #collaboration h3:first-child{
+        left:35%;
+    }
+}
+
+@media screen and (max-width: 1116px){
+    #collaboration h3:first-child{
+        
+        width:30%;
+    }
+}
+@media screen and (max-width: 1058px){
+    h1{
+        padding-top:250px;
+        width:100%;
+        text-align: center;
+        
+    }
+    .intro-text-cont figure{
+        width:10%;
+       
+    }
+    #collaboration h3:first-child{
+        width:30%;
+    }
+    
+}
+@media screen and (max-width: 1024px){
+    .quadrant{
+        width:100%;
+    }
+}
+@media screen and (max-width: 998px){
+    .intro-text-cont figure{
+        width:12%;
+    }
+    #collaboration p{
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (max-width: 855px){
+    .intro-text-cont p{
+        font-size: 18px;
+    }
+    .intro-text-cont figure{
+        width:30px;
+        height:30px;
+    }
+}
+@media screen and (max-width: 600px){
+    #collaboration h3:first-child{
+        position:unset;
+        width:100%;
+    }
+  
+}
+@media screen and (max-width: 500px){
+    .panel-intro{
+        width:100%;
+    }
+    .intro-text-cont{
+        margin-top:0.5em;
+    }
+    .intro-text-cont figure{
+        width:12%;
+        margin-left:0;
+    }
+    .intro-text-cont p{
+        font-size: 20px;
+       
+    }
+    .quadrant figure{
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+    .quadrant figure img{
+       /* width:100%;*/
+        box-shadow:none;
+     }
+    h5{
+        margin-left:1em;
+     }
+    .quadrant p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:18px;
+        text-align: left;
+    }
+    #coll-frame figure{
+        width:50%;
+        height:5%;
+        padding:0.5em;
+    }
+    #coll-frame figure:nth-child(7), #coll-frame figure:nth-child(8){
+        padding-top:10%;
+    }
+    #collaboration p{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 370px){
+    .intro-text-cont figure{
+        width:15%;
+        margin-left:0;
+    }
+    h1{
+        font-size:2em;
+    }
+
+   
+}

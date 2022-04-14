@@ -1,0 +1,48 @@
+header{
+    background-image: url('../media/food/orizontal/IMG_0700.jpg');
+}
+h1{
+    color:#000;
+}
+#coat-no-sized{
+    column-count: 5;   
+}
+.intro-gallery-pic{
+   
+    width:100%;
+}
+.intro-gallery-pic img{
+    width:100%;
+}
+#span-ruler{
+    top:250px;
+}
+@media screen and (max-width: 1058px){
+    h1{
+        width:100%;
+        text-align: center; 
+    }
+    #coat-no-sized{
+        column-count: 4;   
+    }
+}
+@media screen and (max-width: 800px){
+    #coat-no-sized{
+        column-count: 3;  
+        column-gap: 2px; 
+    }
+}
+@media screen and (max-width:600px){
+    #span-ruler{
+        top:200px;
+    }
+}
+@media screen and (max-width:380px){
+    #coat-no-sized{
+        column-count: 2;  
+         
+    }
+    #span-ruler{
+        top:150px;
+    }
+}

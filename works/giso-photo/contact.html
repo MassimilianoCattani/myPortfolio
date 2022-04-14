@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=0"/>
+    <title>Contact</title>
+    <link rel = "stylesheet" type = "text/css"  href = "styles/style.css" media = "all"/>
+    <link rel = "stylesheet" type = "text/css"  href = "styles/contactStyle.css" media = "all"/>
+    <script src = "javascript/contactScript.js" defer></script>
+</head>
+<body>
+    <header>
+        
+            <figure id = "logo">
+                <img src="./media/logo/front-logo-3.png" alt = "ivan gisotti Photographer">
+            </figure>
+          
+                <nav class="topnav">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="service.html">Services</a>
+                    <a class = "active" href = "contact.html">Contact</a>  
+                </nav>
+             
+            <div class="burger">
+                <div class = "line1"></div>
+                <div class = "line2"></div>
+                <div class = "line3"></div>
+            </div> 
+            <h1>Contact</h1>
+    </header>
+    <main>
+        <section id = "id-card">
+            <figure id = "photographer">
+                <img src = "media/contact-media/ivan-resized.jpg" alt = "Ivan Gisotti Photographer">
+            </figure>
+            <div id="cont-id">
+                <figure>
+                    <img src = "media/logo/new-front-logo.jpg" alt = "Ivan Gisotti Photographer">
+                </figure>
+            </div>
+        </section>
+        <section id = "form-container">
+            <form role = "search" method = "POST" action = "mail.php">
+                <fieldset>
+                    <legend>Send a message</legend>
+                    <div class = "controlgroup">
+                        <label id = "l1" for = "tit">
+                            Title
+                        </label>
+                        <select aria-labelledby = "l1" name = "title" id = "tit">
+                            <option value = "1">Mr</option>
+                            <option value = "2">Mrs</option>
+                            <option value = "3">Miss</option>
+                            <option value = "4">Ms</option>
+                            <option value = "5">Dr</option>
+                            <option value = "6">Prof</option>
+                        </select>
+                    </div>
+                    <div class = "controlgroup">
+                        <label id = "l2" for = "fname">Full name</label>
+                        <input aria-labelledby = "l2" type ="text" name = "fullname" id = "fname">
+                    </div>
+                    <div class = "controlgroup">
+                        <label id = "l3" for = "mail">Email address</label>
+                        <input aria-labelledby = "l3" aria-required = "true" type = "email" id = "mail" placeholder = "Your email address" required name = "email"/>  
+                    </div>
+                    
+                    <div class = "controlgroup">
+                        <label id = "l5" for = "msg">Message</label>
+                        <textarea aria-labelledby = "l5" aria-required = "true" required placeholder = "Type your message here" name = "message" id = "msg" ></textarea>
+                    </div>
+                        <input type = "submit" name = "sendmessage" value = "Send">
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    <footer id = "img-footer">
+        <div id="overlay">
+            <div id = "text-footer" class ="footer-sections">
+                <p class = "foot-info">gisotti@me.com</p> 
+                <p class = "foot-info">Phone: +44 7404 727501</p>
+                <p class = "foot-info">Willesden Green, London.</p>
+                <img id = "logo-foot" src = "media/logo/new-front-logo.jpg"  alt = "Ivan Gisotti photographer">
+            </div>
+            <div id="social" class ="footer-sections">
+                <figure>
+                    <a target = "blank" href = "https://www.facebook.com/ivan.gisotti"><img class = "social-icon" src = "media/social-media-logos/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt = "Facebook logo"></a>
+                </figure>
+                <figure>
+                    <a target = "blank" href = "https://instagram.com/ivan_gisotti?igshid=1psewh9u8hfvp"><img class = "social-icon" src = "media/social-media-logos/iconfinder_1_Instagram_colored_svg_1_5296765.png" alt = "Instagram logo"></a>
+                </figure>
+                <figure>
+                    <a target = "blank" href = "https://m.youtube.com/results?search_query=Ivan+gisotti"><img class = "social-icon" src = "media/social-media-logos/iconfinder_1_Youtube_colored_svg_5296521.png" alt = "You tube logo"></a>
+                </figure>
+            </div>
+            <div id="lover-nav" class ="footer-sections">
+                <nav id = "footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="service.html">Services</a>
+                    <a class ="active" href="contact.html">Contact</a> 
+                </nav>
+                
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>

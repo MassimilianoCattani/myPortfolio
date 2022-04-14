@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "weatherStyle.css">
+    <script src = "/js/dynMenuBar.js" defer></script>
+    <title>WeatherJS</title>
+</head>
+<body>
+    <header role = "banner">
+        <div id = "overlay-col-left">
+            <div id = "logo-name">
+                <figure id = "logo">
+                    <img src = "/media/maxWeb-5b.gif"/>
+                </figure>
+                <div id = "container-logo-text">
+                    <h2 class = "text-logo">Max</h2>
+                    <h2 class = "text-logo">Web</h2>
+                </div>
+            </div>
+        </div>
+        <div id="overlay-col-right">
+            <nav id = "topnav" role = "navigation">
+                
+                    <ul id = "ul-topnav">
+                        <li><a href = "/index.html" class = "top-nav-link">Home</a></li>
+                        <li><a href = "works.html" class = "top-nav-link active-nav">Works</a></li>
+                        <li><a href  = "#" class = "top-nav-link" target= "blank">Git</a></li>
+                        <li><a href = "about-me.html" class = "top-nav-link">About</a></li>
+                        <li><a href = "contact.html" class = "top-nav-link">Contact</a></li>
+                    </ul>
+            </nav>
+        
+            <div id = "hamburger">
+                <div class = "bar"></div>
+                <div class = "bar"></div>
+                <div class = "bar"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+    
+        <div class="container">
+            <div class="row">
+                <div id = "weather-info" class="col-md-6 mx-auto text-right bg-primary mt5 p-5 rounded">
+                    <h1 id = "w-location"></h1>
+                    <h2 id = "w-country"></h2>
+                    <h3 class="text-dark" id = "w-desc"></h3>
+                    <h3 id="w-string"></h3>
+                    <img id = "w-icon">
+                    <ul id="w-details" class ="list-group mt-3 text-center">
+                        <li class="list-group-item" id = "w-humidity"></li>
+                        <li class="list-group-item" id = "w-feels-like"></li>
+                        <li class="list-group-item" id = "w-wind"></li>
+                        <li class="list-group-item" id = "w-direction"></li>
+                    </ul>
+                    <hr>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#locModal">
+                        Change Location
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="locModal" tabindex="-1" role="dialog" aria-labelledby="locModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="w-form">
+                    <div class="form-group">
+                        <lable for = "city">City</lable>
+                        <input type = "text" id = "city" class = "form-control">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id = "w-change-btn" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src = "weatherStorage.js"></script>
+        <script src = "weather.js"></script>
+        <script src = "weatherUi.js"></script>
+        <script src = "weatherApp.js"></script>
+    </main>
+</body>
+</html>

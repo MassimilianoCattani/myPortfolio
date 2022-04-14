@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TetrisJS</title>
+    <style>
+        canvas{
+            display: block;
+            margin:0 auto;
+            padding-bottom:8px;
+        }
+        #scoreHold{
+            float:left;
+        }
+        
+        #controller{
+            width:200px;
+            margin:auto;
+        }
+        .cont-contr{
+            text-align: center;
+            margin-bottom: 7px; 
+        }
+        #left{
+           
+            font-size: 20px;
+        }
+        #left, #rotate, #right, #down{
+            width:30%;
+            text-align: center;
+        }
+        #right, #down, #rotate{
+            
+            font-size: 20px;
+        }
+        #down{
+            margin-right:5px;
+            margin-left:5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <canvas id = "tetris" width = "200" height="400" ></canvas>
+    <div id = "scoreHold">
+        <span>Score:</span><div id="score">0</div>
+    </div>
+    <div id="controller">
+        
+        <div id="mid-control" class = cont-contr>
+            <button class = "btn btn-left" id = "left">&#5130;</button>
+            <button class = "btn btn-rotate" id = "rotate">&#11118;</button>
+            <button class = "btn btn-right" id = "right">&#5125;</button>   
+        </div>
+        <div id="mid-lower-control" class = cont-contr>
+            <button class = "btn btn-down" id = "down">&#5121;</button>
+        </div>
+        <div id="lower-control" class = cont-contr>
+            <button class = " btn btn-drop" id = "drop">DROP</button>
+        </div>
+    </div>
+    <script src = "forms.js"></script>
+    <script src = "tetris.js"></script>
+</body>
+</html>

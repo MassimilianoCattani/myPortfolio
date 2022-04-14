@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./CSS/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./CSS/gridStyle.css">
+    <script src = "./scripts/script.js" defer></script>
+    <title>Game Applications</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <header role="banner">
+            <div id="header-envelope-left">
+                <div id="square-envelope">
+                    <div class="squares" id = "square-one"><p>max<br>max<br>max</p></div>
+                    <div class="squares" id = "square-two"><p>max<br>max<br>max</p></div>
+                    <div class="squares" id = "square-three"><p>max<br>max<br>max</p></div>
+                    <div class="squares" id = "square-four"><p>max<br>max<br>max</p></div>
+                    <div class="squares" id = "square-five"><p>max<br>max<br>max</p></div>
+                </div>
+                <div id="overlay-main">
+                    <div id="logo">
+                        <h1>MAX <br> WEB</h1>
+                    </div> 
+                </div>
+            </div>
+            <nav id = "main-nav" role = "navigation">
+                <ul id = "ul-main-nav">
+                    <li><a href = "index.html" class = "top-nav-link active-nav"><span class = "mini-icon">&#9751;  </span>Home</a></li>
+                    <li class = "current"><a href = "#" class = "top-nav-link"><span class = "mini-icon">&#x2692;  </span>Works</a>
+                        <ul id = "types">
+                            <li class = "type"><a href = "workApps.html">Work Apps</a></li>
+                            <li class = "type"><a href = "games.html" class = "active">Games</a></li>
+                            <li class = "type"><a href = "webSites.html">Websites</a></li>
+                            <li class = "type"><a href = "practice.html">Practice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href  = "https://github.com/MassimilianoCattani?tab=repositories" class = "top-nav-link" target= "blank"><span class = "mini-icon">&#x2756;  </span>Git</a></li>
+                    <li><a href = "about-me.html" class = "top-nav-link"><span class = "mini-icon">&#x262F; </span>About</a></li>
+                    <li><a href = "contact.html" class = "top-nav-link"><span class = "mini-icon">&#9742;  </span>Contact</a></li>
+                </ul>
+                <div id="hamburger">
+                    <div class="slice" id="slice-one"></div>
+                    <div class="slice" id="slice-two"></div>
+                    <div class="slice" id="slice-three"></div>
+                </div>
+            </nav>
+        </header>
+        <main role = "main">
+            <section id = "app-container">
+                <h2>Training</h2>
+                <div id="grid-container">
+                    <a id = "proj-1" class = "some-projects-links" href = "works/colors/index.html" target = "blank">
+                        <figure class="proj-sample" id = proj-samp-1>
+                            <img src = "works/colors/media/media-yellow/media-01/yellow-02.jpg" alt = "boxes and colors">
+                            <figcaption>COLORBOX</figcaption>
+                        </figure>
+                    </a>
+                    <a id = "proj-1" class = "some-projects-links" href = "works/nice/index.html" target = "blank">
+                        <figure class="proj-sample" id = proj-samp-2>
+                            <img src = "works/nice/media/media-blue/media-01/blue-01.jpg" alt = "slot machine">
+                            <figcaption>MOCKPAGE</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer role = "contentinfo">
+            <h3 class = "footer-h3">MAXWEB</h3>
+            <p class = "footer-p">By <a href = "contact.html">Max Cattani</a></p>
+        </footer>
+    </div>
+</body>
+</html>

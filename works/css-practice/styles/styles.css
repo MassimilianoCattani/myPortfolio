@@ -1,0 +1,284 @@
+/*global*/
+*{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing:border-box;
+}
+ul {
+    padding:0;
+    margin:0;
+    font-size:100%;
+     
+}
+
+#pagewrapper{
+    width:80%;
+    margin:auto;
+    background-color:#fff;
+    overflow:hidden;
+
+}
+/*header principale*/
+#main-header{
+    background-color:#103080;
+    min-height:100px;
+    padding-top:30px;
+    
+}
+.head-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    border-top:2px solid #fff;
+    padding-top:10px;
+    
+   
+}
+#branding{
+    width:10%;
+    min-width:200px;
+
+}
+#primarynav{
+    width:75%;
+    min-width:250px;
+    padding-top:25px;
+    
+}
+#branding img{
+    width:60%;
+    height:auto;
+    margin:0.5rem auto;
+    border:1px solid #5010ff;
+    border-radius:15px;
+    margin-bottom:10px;
+    min-width:100px;
+    margin-left:55px;
+}
+
+
+/*#primarynav{
+    display:flex;
+    flex-flow:row wrap;
+    width:100%;
+    height:150px;
+    justify-content:center; 
+    
+}*/
+
+
+/*#main-header img{
+    
+    width:80px;
+    height:60px;
+    border:3px solid #205599;
+    border-radius:25%;  
+}*/
+
+
+#primarynav ul{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+    
+}
+
+#primarynav li{
+    display:inline;
+}   
+    
+
+#primarynav a{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    padding:10px; 
+    vertical-align:middle; 
+     
+}
+#primarynav a:hover{
+    color:#5010ff;
+}
+#primarynav a:active{
+    color:#5090ff;
+    font-weight:bold;
+}
+
+/*#primarynav a:visited{
+    color:#009560;
+}*/
+.showcase{
+    height:330px;
+    background:url('../media/media-blue/media-01/blue-01.jpg')repeat;
+
+}
+.showcase h3{
+    position:relative;
+    top:1700px;
+}
+
+
+/*boxes*/
+#boxes{
+    margin-top:20px;   
+}
+.mid-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+.box{
+    border:1px solid #ccc0;
+    margin:10px 13px 10px 10px;
+    width:22%;
+    min-width:200px;
+    
+}
+.box img{
+    width:90%;
+    height:200px;
+    margin:5px;
+}
+.box h3{
+    color:#12a155;
+    padding:0 0 10px 10px;    
+}
+
+
+.low-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+.col{
+    width:45%;
+    border:1px solid #ccc;
+    margin:10px;
+    min-width:200px;
+    
+}
+.col img{
+    width:80%;
+    height:200px;
+    padding: 0 0 0 10px;
+}
+.col h4{
+    padding:10px;
+}
+.col p{
+    padding:10px 0 10px 10px;
+}
+.col p,.col h4{
+    min-width:200px;
+}
+
+footer{
+    text-align:center;
+    margin:10px 0 20px 0;
+    border:1px solid #103080;
+    clear:both;
+}
+
+/*prod-1 page*/
+
+.fotoslider{
+    width:100%;
+    height:300px;
+    border:2px solid #103080;
+}
+
+.up-boxes,.down-boxes{
+    
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+    
+}
+.box-a, .box-b{
+    width:50%;
+    height:150px;
+    border:2px solid #103080;
+    min-width:248px;
+}
+.pic-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    clear:both;
+    
+}
+.box-1, .box-2, .box-3, .box-4{
+    width:25%;
+    height:150px;
+    border:2px solid #103080;
+    min-width:248px;
+    
+}
+
+#space-form{
+    width:100%;
+    height:300px;
+    
+    
+    
+}
+#before-form{
+    width:60%;
+    min-width:248px;
+    height:300px;
+    border:2px solid #103080;
+    float:left;
+}
+.my-form{
+    width:40%;
+    height:300px;
+    float:left;
+    padding:40px 0px 0 50px;
+    min-width:248px;
+    border:2px solid #103080;
+
+    
+}
+.form-group{
+    padding:10px 0;
+}
+.my-form label{
+    display:block;
+}
+#slide-container{
+    width:100%;
+    min-width:250px;
+    height:350px;
+}
+#slide-container img{
+    width:100%;
+    min-width:250px;
+    height:350px;
+}
+.button-left, .button-right{
+    width:50px;
+    height:25px;
+    color:#103080;
+    border:2px solid #103080;
+}
+.bottoncini{
+    width:100%;
+    position:relative;
+    bottom:200px;
+}
+.button-right{
+    float:right;
+}
+
+

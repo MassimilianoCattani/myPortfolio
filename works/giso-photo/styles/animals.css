@@ -1,0 +1,14 @@
+header{
+    background-image: url(../media/animals/cover.jpg);
+    background-size: cover;
+}
+h1{
+    color:#000;
+}
+@media screen and (max-width: 1058px){
+    h1{
+        width:100%;
+        
+        text-align: center; 
+    }
+}

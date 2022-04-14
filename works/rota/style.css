@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+main{
+    margin-top:2rem;
+}
+
+
+#h1{
+    float:left;
+    color:rgb(83, 36, 36);
+    
+}
+#h2{
+    color:rgb(83, 36, 36,0.5);
+    float:right;
+    
+}
+#sectia{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+input{
+    padding:0.4em;
+    font-size:1.1em;
+    color:#ff5050;
+}
+.caveza{
+    width:80%;
+    margin:2em auto;
+    padding-bottom:3em;
+}
+
+#h25{
+    margin:1.5rem 0 1em 1.5rem;
+    border-top:1px solid rgb(83, 36, 36,0.5);
+    width:70%;
+    margin-left:200px;
+    
+}
+#btn{
+    text-align:center;
+    margin-bottom:1.5em;
+}
+#hourh, #breaks{
+    width:8%;
+    height:3em;
+    margin:0.5em;
+    font-size:1em
+}
+#forNameInp{
+    margin-left:6.5em;
+}
+#addNameRow{
+    height:2.5em;
+    font-size:1em;
+    width: 8%;
+    padding:0.5em;
+}
+table{
+    width:90%;
+    margin:auto;
+    border-collapse:collapse;
+    border-spacing: 0px;
+    margin-bottom:2.5rem;
+}
+th{
+    padding: 0 0px 20px 0;
+    font-size:1.1rem;
+    
+}
+th:nth-child(2){
+    color:#555b8f;
+    width:1.5em;
+}
+.delete{
+    float:left;
+    color:#ff0000;
+    background-color:#ccc;
+    border-radius:1px;
+    cursor:pointer;
+}
+td{
+    border:1px solid #555;
+    border-collapse:collapse;
+    border-spacing: 0px;
+    border-width:0;
+    padding:0em;
+}
+td{
+    border-right:1px solid #fff;
+}
+.box-01{
+    width:100%;
+    height:1.5em;
+    border:1px solid #555; 
+    border-collapse:collapse;
+    border-spacing: 0px;
+    border-bottom-width:0;
+    border-left-width:0;
+    border-radius:5px;  
+    display:flex;
+    flex-direction:row;
+    
+    
+    
+}
+.break{
+    width:33%;
+    height:100%;
+    margin:0px;
+    border-radius:5px; 
+    margin-top:0em;
+    text-align:center;
+
+}
+table tbody tr .box-01:last-child{
+    border-bottom:1px solid #444;
+    border-top:0;
+}
+tbody{
+    border-top:1px solid #444;
+}
+.name{
+    
+    width:8%;
+    border-collapse:collapse;
+    border-spacing: 0px;
+    border-width:0;
+	letter-spacing:0;
+    padding:0.2em 0.1em 0 0.1em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1em;
+}
+.delete{
+    margin-right:0.5em;
+}
+.shift .shift-class-inp{
+    border:none;
+    width:4em;
+}
+.total{
+    text-align: center;
+}
+span{
+    font-style:italic;
+    font-size:0.9em;
+    font-weight:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width : 1179px){
+    body{
+        font-size:0.8em;
+    }
+    th{
+        font-size:1em;
+    }
+}
+@media screen and (max-width : 1024px){
+    body{
+        font-size:0.7em;
+    }
+}
+
